@@ -10,7 +10,7 @@ namespace FileWatcher
 {
     public class ArchiveOptions : Options
     {
-        public string ArchiveDir { get; set; } = @"F:\FileWatcher2\Tdir\Archive";
+        public string ArchiveDir { get; set; } = @"F:\FileWatcher\Tdir\Archive";
         public CompressionLevel CompressionLevel { get; set; } = CompressionLevel.Optimal;
 
         public ArchiveOptions()

@@ -16,68 +16,41 @@ namespace FileWatcher
         {
             this.Options = options;
         }
-        public static void Encrypt(string fileName)
+        const string alfabet = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ";
+        const string alfabet2 = "ABCDEFGHIGKLMNOPQRSTUVWXYZ";
+
+        public static string CodeEncode(string text, int k)
         {
-            try
+            //добавляем в алфавит маленькие буквы
+            var fullAlfabet = alfabet + alfabet.ToLower() + alfabet2 + alfabet2.ToLower();
+            var letterQty = fullAlfabet.Length;
+            var retVal = "";
+            for (int i = 0; i < text.Length; i++)
             {
-                FileStream myStream = new FileStream(fileName, FileMode.OpenOrCreate);
-
-                Aes aes = Aes.Create();
-
-                byte[] key = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16 };
-                byte[] iv = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16 };
-
-                StreamReader sReader = new StreamReader(myStream);
-                string fileContain = sReader.ReadToEnd();
-                sReader.Close();
-                myStream.Close();
-                if (fileContain != "")
+                var c = text[i];
+                var index = fullAlfabet.IndexOf(c);
+                if (index < 0)
                 {
-                    myStream = new FileStream(fileName, FileMode.OpenOrCreate);
-                    CryptoStream cryptStream = new CryptoStream(myStream, aes.CreateEncryptor(key, iv), CryptoStreamMode.Write);
-                    StreamWriter sWriter = new StreamWriter(cryptStream);
-                    sWriter.WriteLine(fileContain);
-
-                    sWriter.Close();
-                    cryptStream.Close();
-                    myStream.Close();
-
+                    //если символ не найден, то добавляем его в неизменном виде
+                    retVal += c.ToString();
+                }
+                else
+                {
+                    var codeIndex = (letterQty + index + k) % letterQty;
+                    retVal += fullAlfabet[codeIndex];
                 }
             }
-            catch
-            {
-                throw;
-            }
+
+            return retVal;
         }
 
-        public static void Decrypt(string fileName)
-        {
-            byte[] key = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16 };
-            byte[] iv = { 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16 };
-            try
-            {
-                FileStream myStream = new FileStream(fileName, FileMode.Open);
-                Aes aes = Aes.Create();
+        //шифрование текста
+        public static string Encrypt(string plainMessage, int key)
+            => CodeEncode(plainMessage, key);
 
-                CryptoStream cryptStream = new CryptoStream(myStream, aes.CreateDecryptor(key, iv), CryptoStreamMode.Read);
-
-                StreamReader sReader = new StreamReader(cryptStream);
-
-                string message = sReader.ReadToEnd();
-                sReader.Close();
-                cryptStream.Close();
-                myStream.Close();
-                File.WriteAllText(fileName, string.Empty);
-                myStream = new FileStream(fileName, FileMode.Open);
-                StreamWriter sWriter = new StreamWriter(myStream);
-                sWriter.WriteLine(message);
-                sWriter.Close();
-                myStream.Close();
-            }
-            catch
-            {
-                throw;
-            }
-        }
+        //дешифрование текста
+        public static string Decrypt(string encryptedMessage, int key)
+            => CodeEncode(encryptedMessage, -key);
     }
 }
+

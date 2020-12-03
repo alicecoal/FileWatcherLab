@@ -49,6 +49,7 @@ namespace FileWatcher
 
         private void Created(object sender, FileSystemEventArgs e)
         {
+            int key = 17; 
             string pathToFile = e.FullPath;
             DateTime date = File.GetLastWriteTime(pathToFile);
             string name = Path.GetFileNameWithoutExtension(pathToFile);
@@ -60,10 +61,23 @@ namespace FileWatcher
             FileSystemWatcher watcher = new FileSystemWatcher();
             if (extansion != ".gz" && extansion != "")
             {
-
+                
+                string encryptedText=""; 
+                string decryptedText="";
+                string message = "";
                 if (encryptionOptions.NeedToEncrypt)
                 {
-                    Crypter.Encrypt(pathToFile);
+                    using (StreamReader sr = new StreamReader(pathToFile))
+                    {
+                        message = sr.ReadToEnd();
+                        encryptedText = Crypter.Encrypt(message, key);
+                        sr.Close();
+                    }
+                    using (StreamWriter sw = new StreamWriter(pathToFile, false, System.Text.Encoding.Default))
+                    {
+                        sw.WriteLine(encryptedText);
+                        sw.Close();
+                    }
                 }
 
                 string pathToArchive = Path.Combine(SDir, name + ".gz");
@@ -85,17 +99,25 @@ namespace FileWatcher
                 File.Move(pathToArchive, newPathToArchive);
 
 
-                string newPathToFile = Path.Combine(TDir, date.Year.ToString(),
-                    date.Month.ToString(), date.Day.ToString());
+                string newPathToFile = Path.Combine(TDir, date.Year.ToString(), date.Month.ToString(), date.Day.ToString());
                 Directory.CreateDirectory(newPathToFile);
 
-                newPathToFile = Path.Combine(newPathToFile, name + "_"
-                    + DateTime.Now.ToString("yyyy_MM_dd_hh_mm_ss") + extansion);
+                newPathToFile = Path.Combine(newPathToFile, name + "_" + DateTime.Now.ToString("yyyy_MM_dd_hh_mm_ss") + extansion);
                 Archiver.Decompress(newPathToArchive, newPathToFile);
 
                 if (encryptionOptions.NeedToEncrypt)
                 {
-                    Crypter.Decrypt(newPathToFile);
+                    using (StreamReader sr = new StreamReader(newPathToFile))
+                    {
+                        string message1 = sr.ReadToEnd();
+                        decryptedText = Crypter.Decrypt(encryptedText, key);
+                        sr.Close();
+                    }
+                    using (StreamWriter sw = new StreamWriter(newPathToFile, false, System.Text.Encoding.Default))
+                    {
+                        sw.WriteLine(decryptedText);
+                        sw.Close();
+                    }
                 }
             }
         }

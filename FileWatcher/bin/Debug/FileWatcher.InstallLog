@@ -27,3 +27,202 @@ System.Security.SecurityException: Источник не найден, но не
    logtoconsole = 
    assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
    logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление источника EventLog FileWatcher.
+При выполнении программы установки System.Diagnostics.EventLogInstaller во время установки возникло исключение.
+System.Security.SecurityException: Запрошенный доступ к реестру запрещен.
+При удалении из системы возникло исключение. Это исключение будет проигнорировано, и удаление из системы будет продолжено. Однако после завершения удаления данное приложение может оказаться не полностью удаленным.
+Выполняется удаление сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление источника EventLog FileWatcher.
+При выполнении программы установки System.Diagnostics.EventLogInstaller во время установки возникло исключение.
+System.Security.SecurityException: Запрошенный доступ к реестру запрещен.
+При удалении из системы возникло исключение. Это исключение будет проигнорировано, и удаление из системы будет продолжено. Однако после завершения удаления данное приложение может оказаться не полностью удаленным.
+Выполняется установка сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Устанавливается служба FileWatcher...
+Создается исходный EventLog FileWatcher в журнале Application...
+Выполняется откат для сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Восстанавливается исходное состояние журнала событий для источника FileWatcher.
+Выполняется удаление сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление источника EventLog FileWatcher.
+Выполняется удаление службы FileWatcher из системы...
+Служба FileWatcher успешно удалена из системы.
+Выполняется установка сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Устанавливается служба FileWatcher...
+Служба FileWatcher успешно установлена.
+Создается исходный EventLog FileWatcher в журнале Application...
+Выполняется фиксация сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление источника EventLog FileWatcher.
+Выполняется удаление службы FileWatcher из системы...
+Служба FileWatcher успешно удалена из системы.
+Выполняется установка сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Устанавливается служба FileWatcher...
+Служба FileWatcher успешно установлена.
+Создается исходный EventLog FileWatcher в журнале Application...
+Выполняется фиксация сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление источника EventLog FileWatcher.
+Выполняется удаление службы FileWatcher из системы...
+Служба FileWatcher успешно удалена из системы.
+Выполняется установка сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Устанавливается служба FileWatcher...
+Служба FileWatcher успешно установлена.
+Создается исходный EventLog FileWatcher в журнале Application...
+Выполняется фиксация сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление источника EventLog FileWatcher.
+Выполняется удаление службы FileWatcher из системы...
+Служба FileWatcher успешно удалена из системы.
+Выполняется установка сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Устанавливается служба FileWatcher...
+Служба FileWatcher успешно установлена.
+Создается исходный EventLog FileWatcher в журнале Application...
+Выполняется фиксация сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление источника EventLog FileWatcher.
+Выполняется удаление службы FileWatcher из системы...
+Служба FileWatcher успешно удалена из системы.
+Выполняется установка сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Устанавливается служба FileWatcher...
+Служба FileWatcher успешно установлена.
+Создается исходный EventLog FileWatcher в журнале Application...
+Выполняется фиксация сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление источника EventLog FileWatcher.
+Выполняется удаление службы FileWatcher из системы...
+Служба FileWatcher успешно удалена из системы.
+Выполняется установка сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Устанавливается служба FileWatcher...
+Служба FileWatcher успешно установлена.
+Создается исходный EventLog FileWatcher в журнале Application...
+Выполняется фиксация сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление источника EventLog FileWatcher.
+Выполняется удаление службы FileWatcher из системы...
+Служба FileWatcher успешно удалена из системы.
+Выполняется установка сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Устанавливается служба FileWatcher...
+Служба FileWatcher успешно установлена.
+Создается исходный EventLog FileWatcher в журнале Application...
+Выполняется фиксация сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Выполняется удаление источника EventLog FileWatcher.
+Выполняется удаление службы FileWatcher из системы...
+Служба FileWatcher успешно удалена из системы.
+Выполняется установка сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
+Устанавливается служба FileWatcher...
+Служба FileWatcher успешно установлена.
+Создается исходный EventLog FileWatcher в журнале Application...
+Выполняется фиксация сборки 'F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe'.
+Затронуты следующие параметры:
+   logtoconsole = 
+   assemblypath = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.exe
+   logfile = F:\FileWatcher\FileWatcher\bin\Debug\FileWatcher.InstallLog
